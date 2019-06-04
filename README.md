@@ -1,7 +1,7 @@
 MyFilter
 ========
 
-Solution to the JL coding challenge #06 using Kotlin & JUnit5
+Solution to the JL [coding challenge #06](https://coding-challenges.jl-engineering.net/challenges/challenge-6/) using Kotlin & JUnit5
 
 ------
 
@@ -36,13 +36,15 @@ console.log(result); //this should print out [3,4]
 
 ## Motivation
 
-Focus (for me) is on test-driving the solution, and Single Responsibility Principle (including isolating classes under test).
+Focus (for me) is on test-driving the solution and using Higher Order Functions
 
 ------
 
 ## Problem breakdown
 
-1. `myFilter` returns hard-coded `Array<Int>`
+1. `numberIsLessThan5` returns `true` for a number less than 5
 
-2. 
+2. `numberIsLessThan5` returns `false` for number 5
+
+3. `myFilter` returns hard-coded `Array<Int>`
 
