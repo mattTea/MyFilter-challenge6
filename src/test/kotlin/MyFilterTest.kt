@@ -20,4 +20,10 @@ class MyFilterTest {
         val array : Array<Int> = arrayOf(4)
         assertArrayEquals(array, filter.myFilter(array, filter.numberIsLessThan5(4)))
     }
+
+    @Test
+    fun `returns 3 and 4 from arrayOf(3, 4)`() {
+        val array : Array<Int> = arrayOf(3, 4)
+        assertArrayEquals(array, filter.myFilter(array, true))
+    }
 }

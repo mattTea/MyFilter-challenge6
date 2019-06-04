@@ -5,7 +5,7 @@ class MyFilter {
     }
 
     fun myFilter(array: Array<Int>, numberIsLessThan5: Boolean): Array<Int> {
-        return arrayOf(4)
+        return array
     }
 }
 

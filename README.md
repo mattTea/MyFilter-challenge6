@@ -46,5 +46,7 @@ Focus (for me) is on test-driving the solution and using Higher Order Functions
 
 2. `numberIsLessThan5` returns `false` for number 5
 
-3. `myFilter` returns hard-coded `Array<Int>`
+3. `myFilter` returns hard-coded single item `Array<Int>`
+
+4. `myFilter` returns hard-coded multiple item `Array<Int>`
 
