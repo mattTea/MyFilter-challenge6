@@ -16,14 +16,20 @@ class MyFilterTest {
     }
 
     @Test
-    fun `returns 4 from single item array`() {
-        val array : Array<Int> = arrayOf(4)
-        assertArrayEquals(array, filter.myFilter(array, filter.numberIsLessThan5(4)))
+    fun `returns 4 from single item list`() {
+        val list : List<Int> = listOf(4)
+        assertEquals(list, filter.myFilter(list, filter::numberIsLessThan5))
     }
 
     @Test
-    fun `returns 3 and 4 from arrayOf(3, 4)`() {
-        val array : Array<Int> = arrayOf(3, 4)
-        assertArrayEquals(array, filter.myFilter(array, true))
+    fun `returns 3 and 4 from listOf(3, 4)`() {
+        val list : List<Int> = listOf(3, 4)
+        assertEquals(list, filter.myFilter(list, filter::numberIsLessThan5))
+    }
+
+    @Test
+    fun `returns 3 and 4 from listOf(3, 4, 5)`() {
+        val list : List<Int> = listOf(3, 4)
+        assertEquals(list, filter.myFilter(listOf(3, 4, 5), filter::numberIsLessThan5))
     }
 }

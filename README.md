@@ -36,7 +36,7 @@ console.log(result); //this should print out [3,4]
 
 ## Motivation
 
-Focus (for me) is on test-driving the solution and using Higher Order Functions
+Focus (for me) is on test-driving the solution and some functional programming concepts within Kotlin (e.g. higher order functions, function types)
 
 ------
 
@@ -49,4 +49,6 @@ Focus (for me) is on test-driving the solution and using Higher Order Functions
 3. `myFilter` returns hard-coded single item `Array<Int>`
 
 4. `myFilter` returns hard-coded multiple item `Array<Int>`
+
+5. `myFilter` returns filtered `List<Int>` (still with mutable variables inside function) 
 
