@@ -4,14 +4,16 @@ class MyFilter {
         return number < 5
     }
 
-    fun myFilter(list: List<Int>, numberIsLessThan5: (Int) -> Boolean): MutableList<Int> {
-        var result : MutableList<Int> = mutableListOf()
-        for (item in list) {
-            if (numberIsLessThan5(item)) {
-                result.add(item)
-            }
-        }
+    fun <T> myFilter(list: List<T>, numberIsLessThan5: (T) -> Boolean): MutableList<T> {
+        val result = mutableListOf<T>()
+        list.forEach { if (numberIsLessThan5(it)) { result += it } }
         return result
     }
+
 }
+
+// Make recursive function to remove mutable variable in myFilter()
+// (a function that calls itself - possibly tail recursion)
+
+// if a numberIsLessThan5() returns true -> how store or keep in a recursive manner? Examples all show returning a single value
 

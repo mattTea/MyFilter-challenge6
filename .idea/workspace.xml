@@ -5,9 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/MyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/MyFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/MyFilterTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/MyFilterTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/MyFilter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/MyFilter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/MyFilterTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/MyFilterTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -53,23 +51,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="386">
-                <caret line="52" column="88" selection-start-line="52" selection-start-column="88" selection-end-line="52" selection-end-column="88" />
+              <first_editor relative-caret-position="190">
+                <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/MyFilter.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="16" selection-start-column="16" selection-end-column="16" />
+            <state relative-caret-position="90">
+              <caret line="6" column="69" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -77,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/kotlin/MyFilterTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="74" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="74" />
+            <state relative-caret-position="480">
+              <caret line="32" column="86" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="86" />
               <folding>
                 <element signature="e#0#75#0" expanded="true" />
               </folding>
@@ -104,8 +102,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/kotlin/MyFilterKtTest.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/MyFilterTest2.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/MyFilter.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/MyFilterTest.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/MyFilter.kt" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -121,8 +119,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,6 +161,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,50 +260,52 @@
       <option name="presentableId" value="Default" />
       <updated>1559586020273</updated>
       <workItem from="1559586021856" duration="9487000" />
-      <workItem from="1559633108110" duration="11560000" />
+      <workItem from="1559633108110" duration="15028000" />
+      <workItem from="1559719860352" duration="6206000" />
+      <workItem from="1559757144006" duration="5188000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyFilterTest - 2019.06.04 at 11h 16m 28s.xml">
+    <history-entry file="MyFilterTest - 2019.06.04 at 16h 25m 05s.xml">
       <configuration name="MyFilterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyFilterTest - 2019.06.04 at 11h 38m 33s.xml">
+    <history-entry file="MyFilterTest - 2019.06.04 at 16h 45m 10s.xml">
       <configuration name="MyFilterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyFilterTest - 2019.06.04 at 11h 49m 10s.xml">
+    <history-entry file="MyFilterTest - 2019.06.05 at 08h 31m 25s.xml">
       <configuration name="MyFilterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyFilterTest - 2019.06.04 at 14h 25m 20s.xml">
+    <history-entry file="MyFilterTest - 2019.06.05 at 16h 03m 10s.xml">
       <configuration name="MyFilterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyFilterTest - 2019.06.04 at 15h 46m 22s.xml">
+    <history-entry file="MyFilterTest - 2019.06.05 at 16h 05m 02s.xml">
       <configuration name="MyFilterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyFilterTest - 2019.06.04 at 15h 48m 37s.xml">
+    <history-entry file="MyFilterTest - 2019.06.05 at 16h 05m 26s.xml">
       <configuration name="MyFilterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyFilterTest - 2019.06.04 at 15h 49m 37s.xml">
+    <history-entry file="MyFilterTest - 2019.06.05 at 19h 39m 07s.xml">
       <configuration name="MyFilterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyFilterTest - 2019.06.04 at 15h 50m 14s.xml">
+    <history-entry file="MyFilterTest - 2019.06.05 at 20h 57m 48s.xml">
       <configuration name="MyFilterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyFilterTest - 2019.06.04 at 15h 52m 55s.xml">
+    <history-entry file="MyFilterTest - 2019.06.05 at 21h 17m 28s.xml">
       <configuration name="MyFilterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyFilterTest - 2019.06.04 at 16h 09m 33s.xml">
+    <history-entry file="MyFilterTest - 2019.06.05 at 21h 36m 39s.xml">
       <configuration name="MyFilterTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21047000" />
+    <option name="totallyTimeSpent" value="35909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19384836" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19957082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -346,28 +346,28 @@
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/MyFilterTest2.kt" />
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/MyFilterTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="74" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="74" />
+        <state relative-caret-position="480">
+          <caret line="32" column="86" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="86" />
           <folding>
             <element signature="e#0#75#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/MyFilter.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="386">
-            <caret line="52" column="88" selection-start-line="52" selection-start-column="88" selection-end-line="52" selection-end-column="88" />
+          <first_editor relative-caret-position="190">
+            <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/MyFilter.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="69" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="69" />
         </state>
       </provider>
     </entry>

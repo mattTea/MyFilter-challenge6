@@ -23,17 +23,6 @@ To make this harder, avoid using mutable variables in the `myFilter` function wh
 
 ------
 
-### Example output in ES6
-
-```Javascript
-const numberIsLessThan5 = (aNumber) => {return aNumber < 5 }; //this is the function to filter out values less than 5
-const result = myFilter([3,4,5,6,7,8], (numberIsLessThan5)); 
-console.log(result); //this should print out [3,4]
-
-```
-
-------
-
 ## Motivation
 
 Focus (for me) is on test-driving the solution and some functional programming concepts within Kotlin (e.g. higher order functions, function types)
@@ -51,4 +40,34 @@ Focus (for me) is on test-driving the solution and some functional programming c
 4. `myFilter` returns hard-coded multiple item `Array<Int>`
 
 5. `myFilter` returns filtered `List<Int>` (still with mutable variables inside function) 
+
+6. Remove mutable variables from `myFilter`
+
+------
+
+## Interesting things I've learnt
+
+1. [Function types](https://kotlinlang.org/docs/reference/lambdas.html#function-types)
+
+    For declarations that deal with functions, these types have a special notation that corresponds to the signatures of the function.
+    
+    i.e. their parameters and return values...
+    
+    ```
+    numberIsLessThan5: (Int) -> Boolean
+    ```
+
+2. [Generic function parameters](https://kotlinlang.org/docs/reference/generics.html#generic-functions)
+
+    ```kotlin
+    fun <T> myFilter(list: List<T>, numberIsLessThan5: (T) -> Boolean): MutableList<T> {}
+    ``` 
+
+3. Predicate methods/functions as parameters to Higher Order Functions. Reference in examples [here](https://medium.com/@JorgeCastilloPr/tail-recursion-and-how-to-use-it-in-kotlin-97353993e17f)
+
+    Such as `numberIsLessThan5` below
+
+    ```kotlin
+    fun <T> myFilter(list: List<T>, numberIsLessThan5: (T) -> Boolean): MutableList<T> {}
+    ```
 
