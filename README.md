@@ -129,7 +129,7 @@ fun <T> List<T>.head() = first()
 ```
 <br/>
 
-#### 6. Tail recusion
+#### 6. Tail recursion
 
 (More details to be added)
 
