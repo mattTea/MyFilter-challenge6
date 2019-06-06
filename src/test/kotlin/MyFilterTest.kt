@@ -18,18 +18,18 @@ class MyFilterTest {
     @Test
     fun `returns 4 from single item list`() {
         val list : List<Int> = listOf(4)
-        assertEquals(list, filter.myFilter(list, filter::numberIsLessThan5))
+        assertEquals(list, filter.myFilter(list, listOf(), filter::numberIsLessThan5))
     }
 
     @Test
     fun `returns 3 and 4 from listOf(3, 4)`() {
         val list : List<Int> = listOf(3, 4)
-        assertEquals(list, filter.myFilter(list, filter::numberIsLessThan5))
+        assertEquals(list, filter.myFilter(list, listOf(), filter::numberIsLessThan5))
     }
 
     @Test
     fun `returns 3 and 4 from listOf(3, 4, 5)`() {
         val list : List<Int> = listOf(3, 4)
-        assertEquals(list, filter.myFilter(listOf(3, 4, 5), filter::numberIsLessThan5))
+        assertEquals(list, filter.myFilter(listOf(3, 4, 5), listOf(), filter::numberIsLessThan5))
     }
 }

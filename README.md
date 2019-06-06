@@ -20,7 +20,7 @@ The `myFilter` function applies the function passed to it to each element in the
 
 The use of Higher Order Functions such as `Map`, `Filter`, `Reduce` or `Fold` built into the programming language you use is not allowed.
 
-To make this harder, avoid using mutable variables in the `myFilter` function which will probably require you to create a recursive function.
+Avoid using mutable variables in the `myFilter` function. This will likely require the creation of a recursive function.
 
 <br/>
 
@@ -53,11 +53,28 @@ Focus (for me) is on test-driving the solution and some functional programming c
 
 ------
 
-## To run tests
+## Solution
+
+- Code can be found [here](https://github.com/mattTea/MyFilter-challenge6/blob/master/src/main/kotlin/MyFilter.kt)
+
+- Tests can be found [here](https://github.com/mattTea/MyFilter-challenge6/blob/master/src/test/kotlin/MyFilterTest.kt)
+<br/>
+
+------
+
+## To run
 
 - Build in IntelliJ or similar IDE
 
-- Run `MyFilterTest` configuration to run test
+- To run in a REPL, run following example commands
+
+```kotlin
+val filter = MyFilter()
+
+println(filter.myFilter(listOf(1, 3, 5, 7), listOf(), filter::numberIsLessThan5))
+```
+
+- To run tests, run `MyFilterTest` configuration in IDE
 <br/>
 
 ------
@@ -111,4 +128,10 @@ fun <T> List<T>.tail() = drop(1)
 fun <T> List<T>.head() = first()
 ```
 <br/>
+
+#### 6. Tail recusion
+
+(More details to be added)
+
+`tailrec` keyword to use compiler optimisation (to remove the possibility of stack overflow, and get stack safe recursion)
 
