@@ -66,12 +66,23 @@ Focus (for me) is on test-driving the solution and some functional programming c
 
 - Build in IntelliJ or similar IDE
 
-- To run in a REPL, run following example commands
+- To run in a REPL, run following example commands...
 
 ```kotlin
 val filter = MyFilter()
 
 println(filter.myFilter(listOf(1, 3, 5, 7), listOf(), filter::numberIsLessThan5))
+// -> [1, 3]
+```
+
+- To run for a big list, to test stack safety (WARNING, this will take a very long time)...
+
+```kotlin
+val filter = MyFilter()
+val bigList : List<Int> = (0..10000000).toList()
+
+println(filter.myFilter(bigList, listOf(), filter::numberIsLessThan5))
+// -> [1, 2, 3, 4]
 ```
 
 - To run tests, run `MyFilterTest` configuration in IDE
