@@ -2,6 +2,7 @@ MyFilter
 ========
 
 Solution to the JL [coding challenge #06](https://coding-challenges.jl-engineering.net/challenges/challenge-6/) using Kotlin & JUnit5
+
 <br/>
 
 ------
@@ -20,6 +21,7 @@ The `myFilter` function applies the function passed to it to each element in the
 The use of Higher Order Functions such as `Map`, `Filter`, `Reduce` or `Fold` built into the programming language you use is not allowed.
 
 To make this harder, avoid using mutable variables in the `myFilter` function which will probably require you to create a recursive function.
+
 <br/>
 
 ------
@@ -27,6 +29,7 @@ To make this harder, avoid using mutable variables in the `myFilter` function wh
 ## Motivation
 
 Focus (for me) is on test-driving the solution and some functional programming concepts within Kotlin (e.g. higher order functions, function types)
+
 <br/>
 
 ------
@@ -43,7 +46,9 @@ Focus (for me) is on test-driving the solution and some functional programming c
 
 5. `myFilter` returns filtered `List<Int>` (still with mutable variables inside function) 
 
-6. Remove mutable variables from `myFilter`
+6. Refactor `myFilter` to be a recursive function (further refactor required for stack safe recursion)
+
+7. Refactor `myFilter` for stack safe recursion, using tail recursion
 <br/>
 
 ------
@@ -59,7 +64,7 @@ Focus (for me) is on test-driving the solution and some functional programming c
 
 ## Interesting things I've learnt
 
-#### [Function types](https://kotlinlang.org/docs/reference/lambdas.html#function-types)
+#### 1. [Function types](https://kotlinlang.org/docs/reference/lambdas.html#function-types)
 
 For declarations that deal with functions, these types have a special notation that corresponds to the signatures of the function.
 
@@ -70,14 +75,14 @@ numberIsLessThan5: (Int) -> Boolean
 ```
 <br/>
 
-#### [Generic function parameters](https://kotlinlang.org/docs/reference/generics.html#generic-functions)
+#### 2. [Generic function parameters](https://kotlinlang.org/docs/reference/generics.html#generic-functions)
 
 ```kotlin
 fun <T> myFilter(list: List<T>, numberIsLessThan5: (T) -> Boolean): MutableList<T> {}
 ``` 
 <br/>
 
-#### Predicate methods/functions
+#### 3. Predicate methods/functions
 
 As parameters to Higher Order Functions. Reference in examples [here](https://medium.com/@JorgeCastilloPr/tail-recursion-and-how-to-use-it-in-kotlin-97353993e17f)
 
@@ -86,4 +91,24 @@ As parameters to Higher Order Functions. Reference in examples [here](https://me
 ```kotlin
 fun <T> myFilter(list: List<T>, numberIsLessThan5: (T) -> Boolean): MutableList<T> {}
 ```
+<br/>
+
+#### 4. List methods
+
+- `drop(n)` returns a list or subsequence with the first n characters removed
+- `first()` returns the first element (or the first element matching a given predicate)
+<br/>
+
+#### 5. Extension methods
+
+Created extension methods to create `tail()` and `head()` methods for Lists...
+
+```kotlin
+// drops first element in List
+fun <T> List<T>.tail() = drop(1)
+
+// returns first element in List
+fun <T> List<T>.head() = first()
+```
+<br/>
 

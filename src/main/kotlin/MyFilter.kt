@@ -4,16 +4,20 @@ class MyFilter {
         return number < 5
     }
 
-    fun <T> myFilter(list: List<T>, numberIsLessThan5: (T) -> Boolean): MutableList<T> {
-        val result = mutableListOf<T>()
-        list.forEach { if (numberIsLessThan5(it)) { result += it } }
-        return result
+    fun <T> List<T>.tail() = drop(1)
+    fun <T> List<T>.head() = first()
+
+    fun <T> myFilter(list: List<T>, numberIsLessThan5: (T) -> Boolean): List<T> {
+        return if (list.isEmpty()) {
+            listOf()
+        } else {
+            // if first element isLessThan5 return first element + run myFilter on remainder of list
+            if (numberIsLessThan5(list.head())) {
+                listOf(list.head()) + myFilter(list.tail(), numberIsLessThan5)
+            // else run myFilter on remainder of list without returning first element
+            } else {
+                myFilter(list.tail(), numberIsLessThan5)
+            }
+        }
     }
-
 }
-
-// Make recursive function to remove mutable variable in myFilter()
-// (a function that calls itself - possibly tail recursion)
-
-// if a numberIsLessThan5() returns true -> how store or keep in a recursive manner? Examples all show returning a single value
-
