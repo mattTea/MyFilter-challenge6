@@ -142,7 +142,19 @@ fun <T> List<T>.head() = first()
 
 #### 6. Tail recursion
 
-(More details to be added)
+1. By looping through an iterable list and, for example, filtering it by appending a matching element to a new list at each iteration, we are managing the state inside the function ourselves.
+2. Ceding this responsibility to the runtime would be preferable, however, as it avoids additional complexity for the developer.
 
-`tailrec` keyword to use compiler optimisation (to remove the possibility of stack overflow, and get stack safe recursion)
+3. Using a more functional approach would remove this need of managing state, as well as other side effects.
+4. Standard recursion allows us to leave the list state to the runtime - we don't need to create and maintain a reference to it any more.
+5. However, using this method with large lists risks stack overflow, as the language needs to build a call stack in order to rewind it when the last recursion is reached.
+6. Essentially, there are still operations to be done after the last recursion. In this case, the runtime replaces each recursion call in reverse order, from the deepest to the outer ones, with it’s resulting list of elements. When it reaches the outer most level, then it can proceed to actually call the method to build the list.
+
+7. To avoid this, we can build the list on each recursion and pass the temporary list to the next step. This means that the previous call in the stack becomes useless and could just be discarded.
+8. If we can achieve this for all the steps, we will reach the final recursion with the complete list already built, so there would be no need to rewind the stack, so wouldn’t actually need to maintain it. This is **`tail recursion`**.
+
+9. Using the `tailrec` keyword allows the compiler to optimise our recursive methods for complete stack safety.
+
+
+See [this blog](https://medium.com/@JorgeCastilloPr/tail-recursion-and-how-to-use-it-in-kotlin-97353993e17f) for a great explanation of tail recursion in Kotlin.
 
